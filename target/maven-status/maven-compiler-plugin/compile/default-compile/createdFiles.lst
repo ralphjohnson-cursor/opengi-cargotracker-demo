@@ -1,7 +1,6 @@
 net/java/cargotracker/interfaces/tracking/web/CargoTrackingViewAdapter$HandlingEventViewAdapter.class
 net/java/cargotracker/interfaces/handling/HandlingEventRegistrationAttempt.class
 net/java/cargotracker/domain/model/voyage/Schedule.class
-net/java/cargotracker/application/util/JsonMoxyConfigurationContextResolver.class
 net/java/cargotracker/interfaces/handling/file/UploadDirectoryScanner.class
 net/java/cargotracker/interfaces/booking/web/ChangeDestination.class
 net/java/cargotracker/interfaces/booking/web/ItinerarySelection.class

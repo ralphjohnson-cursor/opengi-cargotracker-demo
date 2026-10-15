@@ -6,7 +6,6 @@
 /src/src/main/java/net/java/cargotracker/application/internal/DefaultCargoInspectionService.java
 /src/src/main/java/net/java/cargotracker/application/internal/DefaultHandlingEventService.java
 /src/src/main/java/net/java/cargotracker/application/util/DateUtil.java
-/src/src/main/java/net/java/cargotracker/application/util/JsonMoxyConfigurationContextResolver.java
 /src/src/main/java/net/java/cargotracker/application/util/LocationUtil.java
 /src/src/main/java/net/java/cargotracker/application/util/RestConfiguration.java
 /src/src/main/java/net/java/cargotracker/application/util/SampleDataGenerator.java

@@ -13,7 +13,7 @@
     <!-- XML is still typical for third party framework configuration -->
     <context-param>
         <param-name>primefaces.THEME</param-name>
-        <param-value>ui-lightness</param-value>
+        <param-value>aristo</param-value>
     </context-param>
 
     <servlet>

@@ -10,7 +10,7 @@ import jakarta.jms.MessageListener;
 
 @MessageDriven(activationConfig = {
     @ActivationConfigProperty(propertyName = "destinationType",
-            propertyValue = "javax.jms.Queue"),
+            propertyValue = "jakarta.jms.Queue"),
     @ActivationConfigProperty(propertyName = "destinationLookup",
             propertyValue = "java:app/jms/RejectedRegistrationAttemptsQueue")
 })

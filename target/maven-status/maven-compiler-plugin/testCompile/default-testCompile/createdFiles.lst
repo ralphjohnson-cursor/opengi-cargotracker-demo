@@ -8,6 +8,6 @@ net/java/cargotracker/domain/model/handling/HandlingHistoryTest.class
 net/java/cargotracker/application/BookingServiceTest.class
 net/java/cargotracker/application/HandlingEventServiceTest.class
 net/java/cargotracker/scenario/CargoLifecycleScenarioTest.class
-net/java/cargotracker/infrastructure/routing/ExternalRoutingServiceTest.class
 net/java/cargotracker/domain/model/cargo/ItineraryTest.class
+net/java/cargotracker/infrastructure/routing/ExternalRoutingServiceTest.class
 net/java/cargotracker/application/BookingServiceTestDataGenerator.class

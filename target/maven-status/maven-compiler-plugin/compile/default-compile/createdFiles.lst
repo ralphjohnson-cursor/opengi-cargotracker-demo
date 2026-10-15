@@ -23,8 +23,8 @@ net/java/cargotracker/domain/model/voyage/CarrierMovement.class
 net/java/cargotracker/domain/model/location/Location.class
 net/java/cargotracker/domain/model/handling/HandlingEvent.class
 net/java/cargotracker/interfaces/booking/web/ChangeDestinationDialog.class
-net/java/cargotracker/infrastructure/messaging/jms/RejectedRegistrationAttemptsConsumer.class
 net/java/cargotracker/interfaces/handling/rest/HandlingReportService.class
+net/java/cargotracker/infrastructure/messaging/jms/RejectedRegistrationAttemptsConsumer.class
 net/java/cargotracker/domain/model/handling/CannotCreateHandlingEventException.class
 net/java/cargotracker/interfaces/booking/facade/internal/assembler/LocationDtoAssembler.class
 net/java/cargotracker/infrastructure/persistence/jpa/JpaVoyageRepository.class
@@ -69,8 +69,8 @@ net/java/cargotracker/interfaces/booking/facade/internal/assembler/LocationDtoAs
 net/java/cargotracker/infrastructure/messaging/jms/MisdirectedCargoConsumer.class
 net/java/cargotracker/domain/model/cargo/RoutingStatus.class
 net/java/cargotracker/application/ApplicationEvents.class
-net/java/cargotracker/domain/model/handling/HandlingEventRepository.class
 net/java/cargotracker/application/internal/DefaultCargoInspectionService.class
+net/java/cargotracker/domain/model/handling/HandlingEventRepository.class
 net/java/cargotracker/interfaces/handling/mobile/EventBackingBean.class
 net/java/cargotracker/interfaces/booking/facade/internal/assembler/CargoRouteDtoAssembler.class
 net/java/cargotracker/infrastructure/persistence/jpa/JpaHandlingEventRepository.class

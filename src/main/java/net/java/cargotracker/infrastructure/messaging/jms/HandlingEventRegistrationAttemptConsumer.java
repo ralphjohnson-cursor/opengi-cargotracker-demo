@@ -17,7 +17,7 @@ import net.java.cargotracker.interfaces.handling.HandlingEventRegistrationAttemp
  */
 @MessageDriven(activationConfig = {
     @ActivationConfigProperty(propertyName = "destinationType",
-            propertyValue = "javax.jms.Queue"),
+            propertyValue = "jakarta.jms.Queue"),
     @ActivationConfigProperty(propertyName = "destinationLookup",
             propertyValue = "java:app/jms/HandlingEventRegistrationAttemptQueue")
 })

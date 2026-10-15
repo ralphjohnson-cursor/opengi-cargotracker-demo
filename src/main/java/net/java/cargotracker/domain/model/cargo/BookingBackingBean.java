@@ -13,7 +13,7 @@ import jakarta.inject.Named;
 import static net.java.cargotracker.application.util.DateUtil.computeDuration;
 import net.java.cargotracker.interfaces.booking.facade.dto.Location;
 import net.java.cargotracker.interfaces.booking.facade.BookingServiceFacade;
-import org.primefaces.context.RequestContext;
+import org.primefaces.PrimeFaces;
 
 /**
  *
@@ -165,8 +165,8 @@ public class BookingBackingBean implements Serializable{
         } else {
             bookable = false;
         }
-        RequestContext.getCurrentInstance().update("dateForm:durationPanel");
-        RequestContext.getCurrentInstance().update("dateForm:bookBtn");
+        PrimeFaces.current().ajax().update("dateForm:durationPanel");
+        PrimeFaces.current().ajax().update("dateForm:bookBtn");
     }
 
 }

@@ -8,7 +8,7 @@ import java.util.Map;
 
 import jakarta.enterprise.context.SessionScoped;
 import jakarta.inject.Named;
-import org.primefaces.context.RequestContext;
+import org.primefaces.PrimeFaces;
 import org.primefaces.event.SelectEvent;
 
 /**
@@ -32,7 +32,7 @@ public class ChangeDestinationDialog implements Serializable {
         List<String> values = new ArrayList<>();
         values.add(trackingId);
         params.put("trackingId", values);
-        RequestContext.getCurrentInstance().openDialog("/admin/changeDestination.xhtml", options, params);
+        PrimeFaces.current().dialog().openDynamic("/admin/changeDestination.xhtml", options, params);
     }
     
     public void handleReturn(SelectEvent event) {
@@ -40,7 +40,7 @@ public class ChangeDestinationDialog implements Serializable {
     
     public void cancel() {
         // just kill the dialog
-        RequestContext.getCurrentInstance().closeDialog("");
+        PrimeFaces.current().dialog().closeDynamic("");
     }
 
 

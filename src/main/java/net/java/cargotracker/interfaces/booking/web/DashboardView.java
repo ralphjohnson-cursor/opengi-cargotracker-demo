@@ -3,10 +3,9 @@ package net.java.cargotracker.interfaces.booking.web;
 import java.io.Serializable;
 import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Named;
-import org.primefaces.model.DashboardColumn;
-import org.primefaces.model.DashboardModel;
-import org.primefaces.model.DefaultDashboardColumn;
-import org.primefaces.model.DefaultDashboardModel;
+import org.primefaces.model.dashboard.DashboardModel;
+import org.primefaces.model.dashboard.DefaultDashboardColumn;
+import org.primefaces.model.dashboard.DefaultDashboardModel;
 
 /**
  *
@@ -27,7 +26,7 @@ public class DashboardView implements Serializable{
     public DashboardView(){
         // Initialize the dashboard model
         this.model = new DefaultDashboardModel();
-        DashboardColumn mainColumn = new DefaultDashboardColumn();
+        DefaultDashboardColumn mainColumn = new DefaultDashboardColumn();
  
         mainColumn.addWidget("Routed");
         mainColumn.addWidget("NotRouted");

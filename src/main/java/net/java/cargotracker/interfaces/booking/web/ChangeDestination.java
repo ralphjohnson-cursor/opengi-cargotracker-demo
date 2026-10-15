@@ -9,7 +9,7 @@ import jakarta.inject.Named;
 import net.java.cargotracker.interfaces.booking.facade.BookingServiceFacade;
 import net.java.cargotracker.interfaces.booking.facade.dto.CargoRoute;
 import net.java.cargotracker.interfaces.booking.facade.dto.Location;
-import org.primefaces.context.RequestContext;
+import org.primefaces.PrimeFaces;
 
 /**
  * Handles changing the cargo destination. Operates against a dedicated service
@@ -79,6 +79,6 @@ public class ChangeDestination implements Serializable {
 
     public void changeDestination() {
         bookingServiceFacade.changeDestination(trackingId, destinationUnlocode);
-        RequestContext.getCurrentInstance().closeDialog("DONE");
+        PrimeFaces.current().dialog().closeDynamic("DONE");
     }
 }

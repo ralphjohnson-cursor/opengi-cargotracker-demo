@@ -14,8 +14,8 @@
         <ui:debug hotkey="x" />
     </h:head>
     <h:body>
-        <p:layout fullPage="true">
-            <p:layoutUnit position="north" class="decoration">
+        <div class="layout">
+            <div class="layout">
                 <div class="ui-grid ui-grid-responsive">
                     <div class="ui-grid-row shadowme">
                         <div class="ui-grid-col-1"></div>
@@ -40,18 +40,18 @@
                         <div class="ui-grid-col-1"></div>
                     </div>
                 </div>
-            </p:layoutUnit>
-            <p:layoutUnit position="center" >
+            </div>
+            <div class="layout">
                 <div id="body">
                     <ui:insert name="content">Default Content</ui:insert>
                 </div>
-            </p:layoutUnit>
-            <p:layoutUnit position="south" size="50" class="clearCargoBkg" style="margin: 0 auto;">
+            </div>
+            <div class="layout">
                 <center> <!-- TODO: change center to CCS -->
                     <p:separator/>
                     <p:outputLabel style="center"><a href="http://www.oracle.com/us/legal/terms/index.html" class="footerText">Copyright &#169; Oracle 2015 and its affiliates.</a></p:outputLabel>
                 </center>
-            </p:layoutUnit>
-        </p:layout>
+            </div>
+        </div>
     </h:body>
 </html>

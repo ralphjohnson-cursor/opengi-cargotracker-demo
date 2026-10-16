@@ -1,0 +1,12 @@
+---
+description: PrimeFaces 14 / Jakarta Faces 4 rules for XHTML views
+globs: "**/*.xhtml"
+alwaysApply: false
+---
+# PrimeFaces 14 on Jakarta Faces 4
+
+- `<p:layout>` / `<p:layoutUnit>` were **removed** (PrimeFaces 10). Replace with plain HTML + CSS (flexbox/grid divs with header, sidebar, content, footer); keep the same `ui:insert` names so pages don't change.
+- PrimeFaces Mobile (`pm:` namespace) is gone; use responsive standard components.
+- Themes: legacy jQuery UI themes (e.g. `ui-lightness`) are not supported; use a built-in theme (`saga`, `vela`, `arya`) via the `primefaces.THEME` context-param.
+- Namespaces: prefer `jakarta.faces.*` URIs (`jakarta.faces.html`, `jakarta.faces.core`, `jakarta.faces.facelets`); the PrimeFaces namespace stays `http://primefaces.org/ui`.
+- Check the server log for the first `SEVERE` after redeploy and fix one cause at a time; verify the page returns 200.

@@ -1,0 +1,13 @@
+---
+description: Migration Factory standards for the Cargo Tracker modernisation
+alwaysApply: true
+---
+# Migration standards (apply on every task)
+
+- **Target:** Jakarta EE 10 (`jakarta.*`) on Java 17, GlassFish 7. No new `javax.*` imports.
+- **Tests first:** write or confirm characterisation tests *before* converting any code. If the legacy code has no runnable test harness, say so and use the `waive-characterization` skill. Never claim parity you haven't shown.
+- **Don't change the public contract:** REST paths, payloads and JSF page URLs/outcomes stay the same unless a human approves the change.
+- **Stay in the slice:** edit only files inside the agreed slice; list anything outside it as follow-up.
+- **Humans sign off every gate:** propose, then stop for approval. Never record a bind, waiver or architecture sign-off on your own behalf.
+- **OpenRewrite misses things:** after a recipe run, search for string literals and config that still say `javax` (e.g. `"javax.jms.Queue"` in `@Resource`/lookup names, XML descriptors, `persistence.xml` properties) and fix them.
+- **Process reference:** @migration-factory/docs/FIELD-GUIDE.md
